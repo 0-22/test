@@ -56,6 +56,23 @@ i.surfingbird::before{
 <body>
 
 <div class="btn-group">
+
+    <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your share button code -->
+  <div class="fb-share-button" 
+    data-href="https://www.your-domain.com/your-page.html" 
+    data-layout="button_count">
+  </div>
+
     <!--<button class="btn btn-default disabled">Share:</button>
 
     <a class="btn btn-default" target="_blank" title="Like On Facebook" href="http://www.facebook.com/plugins/like.php?href=_URL_">
@@ -71,13 +88,13 @@ i.surfingbird::before{
         <!--?u=_URL_&t=_DESCTEXT_-->
     <!--</a>-->
     
-    <a href="#" onclick="this.href='http://www.facebook.com/share.php?u='+window.location.href+window.location.hash">Добавить в Facebook</a>
+    <!--<a href="#" onclick="this.href='http://www.facebook.com/share.php?u='+window.location.href+window.location.hash">Добавить в Facebook</a>-->
     
 
-    <a class="btn btn-default" target="_blank" title="On Twitter" href="http://twitter.com/share">
+    <!--<a class="btn btn-default" target="_blank" title="On Twitter" href="http://twitter.com/share">-->
         <!--?url=_URL_&text=_DESCTEXT_-->
-        <i class="fa fa-twitter fa-lg tw">twitter</i>
-    </a>
+        <!--<i class="fa fa-twitter fa-lg tw">twitter</i>
+    </a>-->
 
     <!--<a class="btn btn-default" target="_blank" title="On Google Plus" href="https://plusone.google.com/_/+1/confirm?hl=en&url=_URL_">
         <i class="fa fa-google-plus fa-lg google"></i>
@@ -87,10 +104,10 @@ i.surfingbird::before{
         <i class="fa fa-linkedin fa-lg linkin"></i>-->
     </a>
 
-    <a class="btn btn-default" target="_blank" title="On VK.com"  href="http://vk.com/share.php">
+    <!--<a class="btn btn-default" target="_blank" title="On VK.com"  href="http://vk.com/share.php">
         <!--?url=_URL_&title=_TITLE_&description=_DESCTEXT_&image=_URL_TO_MEDIA-->
-        <i class="fa fa-vk fa-lg vk">вконтакте</i>
-    </a>
+        <!--<i class="fa fa-vk fa-lg vk">вконтакте</i>
+    </a>-->
 
     <!--<a class="btn btn-default" target="_blank" title="Pin It"  href="http://www.pinterest.com/pin/create/button/?url=_URL_&description=_DESCTEXT_&media=_URL_TO_MEDIA">
         <i class="fa fa-pinterest fa-lg pinterest"></i>
